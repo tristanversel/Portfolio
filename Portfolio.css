@@ -647,6 +647,15 @@ body{
  
 }
 
+#travaux{
+    display: flex;
+    margin-top: 0px;
+    height: 350px;
+    justify-content: center;
+    margin-bottom: 200px;
+    margin-top: 200px;
+}
+
 
 @media (max-width: 1200px) {
     #leftabout{
