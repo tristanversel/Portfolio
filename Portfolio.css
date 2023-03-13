@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-html {
-    scroll-behavior: auto;
-}
 
 body{
     margin: 0;
@@ -418,6 +415,7 @@ body{
     border: 5px solid rgb(247, 247, 247);
     border-radius: 100%;
     z-index: 2;
+    transition: all 1s ease-in;
 }
 
 .btnentrance{
@@ -533,7 +531,7 @@ body{
 
 #rightabout p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     padding-top: 0.6vw;
     text-align: start;
@@ -581,26 +579,55 @@ body{
     align-items: center;
     padding-top: 50px;
     width: 350px;
-    height: 200px;
+    height: 180px;
     background-color: rgb(245, 245, 245);
     box-shadow: 0px 0px 10px rgba(110, 110, 110, 0.4);
     transition: all 0.8s ease;
+    position: relative;
+
 }
 
-.itemhover{
-    transform: translateY(-75px);
+.glow:before, .glow:after{
+    content: '';
+    left: -3px;
+    top:-3px;
+    background: linear-gradient(45deg, #78e700, #008efa, #611cc3, #e600de, #008efa, #611cc3, #e600de);
+    height: calc(100% + 6px);
+    width: calc(100% + 6px);
+    position: absolute;
+    background-size: 400%;
+    z-index: -2;
+    animation: glow 20s linear infinite;
 }
+
+@keyframes glow {
+    0%{
+        background-position: 0% 0%;
+    }
+    50%{
+        background-position: 400% 0%;
+    }
+    100%{
+        background-position: 0% 0%;
+    }
+}
+
+.glow:after{
+    filter: blur(10px);
+}
+
 
 .itemtext{
     opacity: 0;
     padding-left: 30px;
     padding-right: 30px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     transition: transform 0.6s ease, opacity 0.4s ease;
     transform: translateY(-70px);
     text-align: justify;
+    margin-bottom: 0;
 }
 .itemtexthover{
     transform: translateY(0px);
@@ -627,7 +654,8 @@ body{
     }
     #rightabout{
         grid-area: 3 / 3 / 9 / 11; 
-        padding-left: 50px;
+        padding-left: 40px;
+        padding-right: 40px;
         height: auto;
     }
 
@@ -645,7 +673,6 @@ body{
 
     #rightabout{
         grid-area: 3 / 2 / 9 / 12; 
-        padding-left: 50px;
         height: auto;
         padding-bottom: 0px;
     }
@@ -733,8 +760,8 @@ body{
     height: 20px;
    }
 
-   #rightabout{
-
+   #rightabout p{
+    font-size: 13px;
    }
 
 
