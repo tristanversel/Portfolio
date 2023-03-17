@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<head>
+<meta charset= "utf-8">
+<title>Portfolio</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="Portfolio.css">
+<link rel="icon" type="image/png" href="images/portfolio.png" />
+</head>
+<body>
+    <audio src="sounds\Nintendo\select.wav" id="select"></audio>
+    <audio src="sounds\Nintendo\enter&back.wav" id="enter&back"></audio>
+    <audio src="sounds\Nintendo\bing.wav" id="blackmode"></audio>
+    
+    
+    <div id="hero">
+        <div class="bubbles">
+            <span style="--i:12"></span><span style="--i:22"></span>
+            <span style="--i:24"></span><span style="--i:15"></span>
+            <span style="--i:10"></span><span style="--i:18"></span>
+            <span style="--i:14"></span><span style="--i:21"></span>
+            <span style="--i:23"></span><span style="--i:15"></span>
+            <span style="--i:16"></span><span style="--i:26"></span>
+            <span style="--i:11"></span><span style="--i:17"></span>
+            <span style="--i:19"></span><span style="--i:13"></span>
+            <span style="--i:11"></span><span style="--i:20"></span>
+            <span style="--i:12"></span><span style="--i:22"></span>
+            <span style="--i:24"></span><span style="--i:10"></span>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="content">
+                    <div class="picture">
+                        <img src="images/p.png">
+                    </div>
+                    <h1>TRISTAN VERSEL</h1>
+                    <p>As a future computer engineering and cybersecurity engineer, I enjoy working in web development as well as many other fields...</p>
+                    <button id="btnabout">See more <span><img src="images/fleche.png"/></span></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div id="sidebar" class="sidebarentrance">
+            <div class="navsection" id="home">
+                <img class="imgsection imgsectionborder" src="images/accueil.png"/>
+            </div>
+            <div class="navsection" id="about">
+                <img class="imgsection" src="images/user.png"/>
+            </div>
+            <div class="navsection" id="skills">
+                <a><img class="imgsection"  src="images/skills.png"/></a>
+            </div>
+            <div class="navsection" id="experience">
+                <img class="imgsection"  src="images/mallette.png"/>
+            </div>
+            <div class="navsection" id="contact">
+                <img class="imgsection"  src="images/message.png"/>
+            </div>
+        </div>
+
+        <div id="hide" class="btnentrance">
+            <img class="btnhide"  src="images/left.png"/>
+        </div>
+
+        <div class="medias" id="topright">
+            <div id="dark">
+                <img class="btn darkmode"  src="images/moon.png"/>
+            </div>
+            <div id="linkdin">
+                <a href="https://www.linkedin.com/in/tristan-versel-194161210/" target="_blank">
+                    <img class="btn" src="images/linkedin.png"/>
+                </a>
+            </div>
+            <div id="github">
+                <a href="https://github.com/tristanversel" target="_blank">
+                    <img class="btn"  src="images/github.png"/>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="aboutsection">
+        <div id="sectioncontainer">
+            <div id="leftabout">
+                <img id="moi" src="images/dos.jpeg">
+            </div>
+            <div id="rightabout">
+                <h1>ABOUT ME</h1>
+                <p>Hi, my name is Tristan, and I am a passionate future IT engineer who is dedicated to create websites. I am a third year student pursuing a degree in IT and cybersecurity engineering. As a student, I have gained a deep understanding of various programming languages, databases, software development methodologies, and other crucial IT concepts. I have also had the opportunity to work on a range of exciting projects, both individually and as part of a team. Thank you for taking the time to read about me, and I hope you enjoy exploring my portfolio.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="skillsection">
+
+        <div id="skillstitle">
+            <h1 id="skilltext">MY SKILLS</h1>
+        </div>
+
+        <div id="sectionskills">
+            <div class="item">
+                <img src="images/vs.png"/>
+                <h2>Programming</h2>
+                <p class="itemtext">Give me the instructions, I will create the program that you need. Possible in many languages like C#, Java, Python..</p>
+            </div>
+            <div class="item">
+                <img src="images/web.png"/>
+                <h2>Web development</h2>
+                <p class="itemtext">Every company or product need a good layout to be known. That's why you will need a fancy website to attract people</p>
+            </div>
+            <div class="item">
+                <img src="images/cyber.png"/>
+                <h2>Cybersecurity</h2>
+                <p class="itemtext">More than 120.000 cyber attacks take place everyday all over the world. This is the reason you need a strong secured network</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="projetsection">
+        <div id="projetitle">
+            <h1>MY PREVIOUS WORK</h1>
+        </div>
+
+        <div id="projets">
+            <div class="projet">
+                <img src="images/sai.jpg">
+                <div class="infoprojet" id="textsai">
+                    <h2>Buisiness web application<span><img src="images/webicon.png"></span></h2>
+                    <p>Development of a business web application for the creation and management of security reports on behalf of the SAI Group. Improvement and extension of a base application, all developed using CSS, PHP, and JavaScript.</p>
+                </div>
+            </div>
+
+            <div class="projet">
+                <img src="images/tlou.jpg">
+                <div class="infoprojet" id="textlou">
+                    <h2>The Last Of Us showcase website<span><img src="images/webicon.png"></span></h2>
+                    <p>Integration of a mockup to promote the videogame The Last Of Us. Original mockup on the theme of Far Cry found online and reworked using Figma on the theme of the Nauthy Dog game. Using CSS and JavaScript.</p>
+                    <div class="access">
+                        <a class="projetlink" href="https://github.com/tristanversel/TheLastOfUs" target="_blank">Code<span><img class="icongit" src="images/git.png"></span></a>
+                        <a class="projetlink" href="https://tristanversel.github.io/TheLastOfUs/" target="_blank">Demo<span><img class="icondemo" src="images/left-click.png"></span></a>
+                    </div>
+                </div>
+                
+            </div>
+
+        
+
+            <div class="projet">
+                <img src="images/starwars.jpg">
+                <div class="infoprojet" id="textstarwars">
+                    <div class="titreprojet">
+                        <h2>Star Wars showcase website<span><img src="images/webicon.png"></span></h2>
+                    </div>
+                    <p>Integration of a Star Wars mockup found on Youtube. The functionalities are fairly simple, it is a showcase website to demonstrate the possibilities of CSS and JavaScript. Done in my free time for fun and to apply my skills.</p>
+                    <div class="access">
+                        <a class="projetlink" href="https://github.com/tristanversel/StarWars" target="_blank">Code<span><img class="icongit" src="images/git.png"></span></a>
+                        <a class="projetlink" href="https://tristanversel.github.io/StarWars/" target="_blank">Demo<span><img class="icondemo" src="images/left-click.png"></span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projet">
+                <img id='imgappli'src="images/app.jpg">
+                <div class="infoprojet" id="textorienta">
+                    
+                    <h2>Android mobile application<span><img src="images/span_mobile.png"></span></h2>
+                    <p>
+                        Development of an android mobile application for orienteering on the Mont Houy site in Valenciennes, as part of a 5-member team. Multiple modes available such as racing, discovery and tourism. Using the Java language.</p>
+                    <div class="access">
+                        <a class="projetlink" href="https://github.com/tristanversel/ORIENTA" target="_blank">Code<span><img class="icongit" src="images/git.png"></span></a>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="contactsection">
+        <div id="formsection">
+            <div class="contact" id="messagesection">
+                <h3>CONTACT ME</h3>
+                <div class="form">
+                    <input type="text" name="name" placeholder="Name" required=""/>
+                    <input type="text" name="email" placeholder="Mail" required=""/> 
+                    <input type="text" name="sujet" placeholder="Subject" required=""/> 
+                    <textarea name="message" placeholder="Message" required=""></textarea>  
+                    <button>Send</button>
+                    <p>inactive form</p>
+                </div>
+            </div>
+            <div class="contact" id="infosection">
+            </div>
+        </div>
+    </div>
+
+
+<script src="Portfolio.js"></script>
+</body>
+</html>
+
+
